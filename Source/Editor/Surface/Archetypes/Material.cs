@@ -642,6 +642,21 @@ namespace FlaxEditor.Surface.Archetypes
                     NodeElementArchetype.Factory.Output(0, "XYZ", typeof(Vector3), 0),
                 }
             },
+
+            new NodeArchetype
+            {
+                TypeID = 48,
+                Title = "Blend Normals",
+                Description = "Pet all the kitties!",
+                Flags = NodeFlags.MaterialGraph,
+                Size = new Vector2(150, 30),
+                Elements = new[]
+                {
+                    NodeElementArchetype.Factory.Input(0, "Base Normal", true, typeof(Vector3), 0),
+                    NodeElementArchetype.Factory.Input(1, "Additional Normal", true, typeof(Vector3), 1),
+                    NodeElementArchetype.Factory.Output(0, "Result", typeof(Vector3), 2),
+                }
+            },
         };
     }
 }
