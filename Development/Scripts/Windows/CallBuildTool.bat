@@ -47,7 +47,7 @@ goto Exit
 echo CallBuildTool ERROR: Missing Visual Studio 2015 or newer.
 goto Exit
 :Error_CompilationFailed
-echo CallBuildTool ERROR: Failed to compile Flax.Build project.
+echo CallBuildTool ERROR: Failed to compile Flax.Build project. Check your C# compiler version.
 goto Exit
 :Error_FlaxBuildFailed
 echo CallBuildTool ERROR: Flax.Build tool failed.
